@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary: #34D399;
+	--secondary: #003C3C;
+	--black: #000000;
+	--white: #FFFFFF;
+	--gray: #C3C3C3;
+	--text1: #787878;
+	--text2: #554F4F;
+}
+
+
+ul {
+	list-style: none;
+	padding: 0px;
+}
+
+a {
+	text-decoration: none;
+
+}
+
+a:hover {
+	color: var(--black);
+}
+
+
+body {
+	font-family: 'Poppins', sans-serif;
+	width: 100%;
+	height: auto;
+	background: var(--white);
+}
+
+#wrapper {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+/*common css*/
+.heading{
+	font-size: 42px;
+	font-weight: 500;
+	color: var(--secondary);
+	margin-bottom: 15px;
+}
+.top-destinations{
+	width: 100%;
+	height: auto;
+	padding: 60px 0px;
+}
+/* header */
+header {
+	width: 100%;
+	height: auto;
+	padding: 5px 0px;
+}
+
+header .logo {
+	width: 160px
+}
+
+header .logo img {
+	width: 100%
+}
+
+header .menu ul li a {
+	display: inline-block;
+	padding: 8px 10px;
+	margin-right: 10px;
+	color: var(--secondary);
+	font-size: 18px;
+}
+
+header .menu ul li.active a {
+	color: var(--primary);
+	font-weight: 600;
+}
+
+/*slider*/
+.slider .carousel-caption {
+	text-align: left;
+	padding-bottom: 9rem
+}
+
+.slider .slider-img {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.slider .slider-img:before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	background: rgba(0, 0, 0, 0.6)
+}
+
+.slider .carousel-caption h4 {
+	font-size: 42px;
+	text-transform: uppercase;
+	color: var(--primary);
+}
+
+.slider .carousel-caption h5 {
+		font-size: 18px;
+}
+
+.slider .carousel-control-next, .slider .carousel-control-prev{
+	width: 50px;
+	height: 50px;
+	opacity: 1;
+	background: var(--primary);
+	top: inherit;
+}
+.slider .carousel-control-next {
+    right: inherit;
+    left: 50px;
+	background: var(--white);
+	color: var(--primary);
+}
+/*top-destinations*/
+.top-destinations .top-card{
+	position: relative;
+	overflow: hidden;
+}
+.top-destinations .top-card .img{
+	width: 100%;
+	overflow: hidden;
+	border-radius: 10px;
+	position: relative;
+	z-index: 1;
+}
+.top-destinations .top-card .img:before{
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background: rgba(0,0,0,0.5);
+	z-index: 2;
+}
+.top-destinations .top-card .img img{
+	width: 100%;
+	transition: 0.3s ease-in-out;
+}
+.top-destinations .top-card:hover .img img{
+	transform: scale(1.1);
+}
+.top-destinations .top-card .content{
+	position: absolute;
+	bottom: -45px;
+	left: 0px;
+	width: 100%;
+	padding: 15px;
+	transition: 0.3s ease-in-out;
+	z-index: 3;
+}
+.top-destinations .top-card:hover .content{
+	bottom: 0px;
+}
+.top-destinations .top-card .content h4{
+	font-size: 18px;
+	color: var(--white);
+	font-weight: 400;
+	margin-bottom: 0px;
+}
+.top-destinations .top-card .content .icon{
+	font-size: 18px;
+	color: var(--white);
+	margin-right: 3px;
+	display: inherit;
+}
+.top-destinations .top-card .content hr{
+	opacity: 0.3;
+	margin: 8px auto;
+	color: var(--white);
+}
+.top-destinations .top-card .content .pack{
+	font-size: 15px;
+	color: var(--gray)
+}
+.top-destinations .top-card .content a{
+	font-size: 15px;
+	color: var(--gray);
+}
+.top-destinations .top-card .content a:hover{
+	color: var(--white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
